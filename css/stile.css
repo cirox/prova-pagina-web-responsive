@@ -9,10 +9,25 @@ img {
     height: auto; /* serve a eliminare il margin-bottom che le immagini hanno di default */
 }
 
-main, footer {
-    max-width: 1200px;
+main, footer, .card-2 {
+    max-width: 800px;
     margin: auto;
     padding: 20px;
+}
+
+.card-2 {
+    display: flex;
+    gap:20px;
+    background: #fff;
+    margin-bottom: 120px;
+}
+
+.immagine {
+    width: 30%;
+}
+
+.testo {
+    width: 70%;
 }
 
 header a {
@@ -117,6 +132,13 @@ footer p {
 @media (max-width: 800px) { /* se la finestra ha una larghezza minore di 800px, fai lo sfondo giallo */
     body { 
         background: yellow;
+    }
+    .card-2 {
+        flex-direction: column;
+    }
+
+    .immagine {
+        width: 100%;
     }
 }
 
