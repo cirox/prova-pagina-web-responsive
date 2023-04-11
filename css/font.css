@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "Accademia";
+    src: url(../font/soehne-test-buch.woff);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Accademia";
+    src: url(../font/soehne-test-halbfett.woff);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Accademia";
+    src: url(../font/soehne-test-buch-kursiv.woff);
+    font-weight: normal;
+    font-style: italic;
+}
