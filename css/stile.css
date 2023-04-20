@@ -1,4 +1,4 @@
-@import url(font.css);
+@import url(font.css); /* importo il file css con le istruzioni per richiamare il file del carattere tipografico */
 
 body {
     margin: 0 0;
@@ -7,17 +7,18 @@ body {
 }
 
 img {
-    max-width: 100%;
+    max-width: 100%; /* per fare in modo che tutte le immagin si adattano all'elemento che le contiene */
+    display: block; /* per azzerare il margine sotto che le immagini hanno di default */
 }
 
 main, footer, .card-2 {
-    max-width: 800px;
-    margin: auto;
+    max-width: 1000px;
+    margin: auto; /* centro l'elemento nella pagina */
     padding: 20px;
 }
 
 .card-2 {
-    display: flex;
+    display: flex; /* allineo in orizzontale gli elementi della card */
     gap:20px;
     background: #fff;
     margin-bottom: 120px;
@@ -83,7 +84,7 @@ section.hero h1 {
     color: rgba(255,255,255,0.9);
 }
 
-main {
+.grid {
     margin: 40px auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
