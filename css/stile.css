@@ -24,15 +24,15 @@ main, footer, .card-2 {
     margin-bottom: 120px;
 }
 
-.immagine {
+.card-2 .immagine {
     width: 30%;
 }
 
-.testo {
+.card-2 .testo {
     width: 70%;
 }
 
-.testo h2, .testo p {
+.card-2 .testo h2, .card-2 .testo p {
     margin: 0;
 }
 
@@ -136,7 +136,7 @@ footer p {
     border-top:1px solid rgba(0,0,0,0.1);
     margin: 0;
     padding: 20px 0;
-    font-size: 14px;
+    font-s 14px;
     color:#444
 }
 
@@ -145,9 +145,14 @@ footer p {
         background: yellow;
     }
     .card-2 {
-        flex-direction: column;
+        flex-direction: column; /* nella versione mobile la card con gli elementi allineati in orizzontale diventa come la prima card, con gli elementi uno sotto l'altro */
     }
-    .immagine {
+
+    .card-2 .testo {
+        width: 100%;
+    }
+
+    .card-2 .immagine {
         width: 100%;
     }
 }
